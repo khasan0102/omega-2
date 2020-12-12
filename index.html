@@ -7,6 +7,51 @@
    <title>Omega</title>
 </head>
 <body>
-   <h1>Asslomu alaykum</h1>
+   <!-- START OMEGA WEBSITE  -->
+
+   <!-- START SITE HEADER  -->
+   <header class="site-header">
+      <div class="header-box">
+         <a href="#" class="logo">Omega</a>
+
+         <nav class="header-nav">
+            <ul class="header-item" id="item">
+               <li class="header-list"><a href="#" class="active">demos</a></li>
+               <li class="header-list"><a href="#">pages</a></li>
+               <li class="header-list"><a href="#">support</a></li>
+            </ul>
+         </nav>
+
+         <a href="#" class="cart" id="cart">
+            <h3>cart</h3>
+            <span>3</span>
+         </a>
+         <div class="nav-icon" id="icon">
+            <div class="nav-icons"></div>
+            <div class="nav-icons"></div>
+            <div class="nav-icons"></div>
+         </div>
+      </div>
+   </header>
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script>
+     let icon = document.querySelector('#icon');
+     let item = document.querySelector('#item');
+     let cart = document.querySelector('#cart');
+
+   icon.addEventListener('click', function() {
+      item.classList.toggle('nav-click');
+      cart.classList.toggle('nav-click');
+   })
+
+  </script>
 </body>
 </html>
