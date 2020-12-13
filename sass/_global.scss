@@ -27,12 +27,6 @@
 	font-style: normal;
 }
 
-$text-color-dark: #696871;
-$text-color-light: rgba(255, 255, 255, 0.7);
-$heading-color-dark: black;
-$heading-color: white;
-$active-color: #5454d4;
-
 html {
 	box-sizing: border-box;
 }
@@ -49,7 +43,25 @@ body {
 	padding: 0;
 }
 .container {
-	width: 75%;
+	width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (max-width: 1150px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.container {
+		width: 100%;
+	}
 }

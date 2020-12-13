@@ -10,7 +10,7 @@
    <!-- START OMEGA WEBSITE  -->
 
    <!-- START SITE HEADER  -->
-   <header class="site-header">
+   <header class="site-header" id="header">
       <div class="header-box">
          <a href="#" class="logo">Omega</a>
 
@@ -32,10 +32,38 @@
             <div class="nav-icons"></div>
          </div>
       </div>
-   </header>
+   </header>  <!-- end site header-->
 
+   <!-- START SITE MAIN  -->
+   <main class="site-main">
+      <section class="top-section">
+         <div class="container top-section-box">
+            <img src="./images/Bitmap1.png" srcset="./images/Bitmap1.png 1x, ./images/Bitmap1@2x.png 2x" alt="Bitmap img" class="top-section-img" width="370" height="600">
 
-  
+            <div class="top-section-info">
+               <h1>Enjoy every single beat on headphone!</h1>
+               <p>For iPhone, iPad, and Android users, be sure your product’s firmware is up to date through the Bose connect app.</p>
+               <div class="price">
+                  <div class="price-top">
+                     <h2>$299</h2>
+                     <a>Save 30% today</a>
+                  </div>
+                  <p class="original-price" id="new">Original price $399</p>
+               </div>
+
+              <div class="add-cart">
+               <form action="#">
+                  <input type="number" name="number" id="number" value="1" readonly>
+                  <button class="btn-1" type="button">+</button>
+                  <button class="btn-2" type="button">-</button>
+               </form>
+
+               <a href="#">Add to cart</a>
+              </div>
+            </div>
+         </div>
+      </section> <!-- end top section-->
+   </main>
   
   
   
@@ -52,6 +80,14 @@
       cart.classList.toggle('nav-click');
    })
 
+   let header = document.querySelector('#header');
+      window.addEventListener('scroll', function(){
+         header.classList.toggle("scroll-header", window.scrollY > 0)
+         item.classList.toggle("bg1", window.scrollY > 0)
+         cart.classList.toggle("bg", window.scrollY > 0)
+      });
+  
+  
   </script>
 </body>
 </html>
