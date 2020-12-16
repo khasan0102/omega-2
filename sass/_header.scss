@@ -8,6 +8,7 @@
 	position: fixed;
 	top: 0;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	z-index: 10;
 }
 .header-box {
 	max-width: 1920px;
@@ -60,7 +61,7 @@
 
 .scroll-header {
 	background-color: #2a2af3;
-	box-shadow: 0 10px 7px rgba($color: #000000, $alpha: 0.5);
+	box-shadow: 0 3px 7px rgba($color: #000000, $alpha: 0.5);
 }
 
 .cart {
@@ -157,9 +158,9 @@
 
 	.bg {
 		background-color: #2a2af3;
-		box-shadow: 0 7px 10px rgba($color: #000000, $alpha: 0.5);
+		box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.5);
 	}
-	
+
 	.bg1 {
 		background-color: #2a2af3;
 	}
@@ -178,8 +179,6 @@
 		font-size: 17px;
 	}
 }
-
-
 
 @media only screen and (max-width: 320px) {
 	.header-box {

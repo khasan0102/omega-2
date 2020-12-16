@@ -1,0 +1,291 @@
+@import "_variable";
+h1,
+p {
+	margin: 0;
+}
+.get-section {
+	width: 100%;
+	background-color: transparent;
+	padding: 100px 0;
+}
+
+.get-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.get-section-info {
+	display: flex;
+	flex-direction: column;
+	h1 {
+		font-size: $heading-size;
+		margin: 0;
+		margin-bottom: 15px;
+		width: 484px;
+	}
+
+	p {
+		font-size: $text-size;
+		line-height: $text-lh;
+		margin-bottom: 20px;
+		width: 515px;
+	}
+}
+
+.icon-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 14px 20px;
+	border: 1px solid #eae9f2;
+	background-color: white;
+	border-radius: 10px;
+	width: 359px;
+	margin-top: 15px;
+	transition: box-shadow 0.4s ease;
+
+	h4,
+	p {
+		margin: 0;
+	}
+
+	img {
+		margin-right: 20px;
+	}
+}
+
+.icon-box {
+	h4 {
+		color: $heading-color-dark;
+		font-size: $text-size;
+	}
+
+	p {
+		color: $text-color-dark;
+		font-size: $text-size2_m1;
+	}
+}
+
+.icon-link:hover {
+	box-shadow: 0 0 7px 6px rgba($color: #969696, $alpha: 0.4);
+}
+
+.first {
+	margin-top: 30px;
+}
+
+.bitmap {
+	transform: rotate(-15deg);
+}
+
+@media only screen and (max-width: 1200px) {
+	.get-section {
+		.get-box {
+			justify-content: space-around;
+			width: 85%;
+		}
+		h1 {
+			font-size: $heading-size_m2;
+			line-height: $heading-lh_m1;
+			width: 350px;
+		}
+
+		p {
+			font-size: $text-size_m2;
+			line-height: $text-lh_m1;
+			width: 350px;
+		}
+
+		.bitmap {
+			width: 420px;
+			height: 380px;
+		}
+	}
+
+	.icon-link {
+		width: 300px;
+		padding: 10px 15px;
+	}
+
+	.icon-box {
+		h4 {
+			color: $heading-color-dark;
+			font-size: $text-size_m2;
+		}
+
+		p {
+			color: $text-color-dark;
+			font-size: $text-size2_m3;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.get-section {
+		.get-box {
+			justify-content: space-around;
+			width: 80%;
+		}
+		h1 {
+			font-size: $heading-size_m3;
+			line-height: $heading-lh_m2;
+			width: 280px;
+		}
+
+		p {
+			font-size: $text-size_m3;
+			line-height: $text-lh_m2;
+			width: 280px;
+		}
+
+		.bitmap {
+			width: 300px;
+			height: 280px;
+		}
+	}
+
+	.icon-link {
+		width: 250px;
+		padding: 10px;
+
+		img {
+			height: 30px;
+			width: 30px;
+		}
+	}
+
+	.icon-box {
+		h4 {
+			color: $heading-color-dark;
+			font-size: $text-size_m2;
+		}
+
+		p {
+			color: $text-color-dark;
+			font-size: $text-size2_m3;
+		}
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.get-section{
+
+		.bitmap {
+			width: 270px;
+			height: 250px;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.get-section {
+		display: flex;
+		justify-content: center;
+		.get-box {
+			align-items: center;
+			flex-direction: column-reverse;
+			width: 90%;
+			margin: 0 auto;
+		}
+		h1 {
+			font-size: $heading-size_m2;
+			line-height: $heading-lh_m2;
+			width: 350px;
+			text-align: center;
+		}
+
+		p {
+			font-size: $text-size_m2;
+			line-height: $text-lh_m2;
+			width: 350px;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		.bitmap {
+			width: 320px;
+			height: 300px;
+		}
+	}
+	.get-section-info {
+		align-items: center;
+		margin-top: 30px;
+	}
+	.icon-link {
+		width: 300px;
+		padding: 10px 15px;
+	}
+
+	.icon-box {
+		h4 {
+			color: $heading-color-dark;
+			font-size: $text-size_m2;
+			width: 200px;
+		}
+
+		p {
+			color: $text-color-dark;
+			font-size: $text-size2_m3;
+			text-align: left;
+			width: 180px;
+		}
+	}
+
+	.first {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.get-section {
+		.get-box {
+			align-items: center;
+			flex-direction: column-reverse;
+			width: 90%;
+			margin: 0 auto;
+		}
+		h1 {
+			font-size: $heading-size_m3;
+			line-height: $heading-lh_m2;
+			width: 90%;
+			text-align: center;
+		}
+
+		p {
+			font-size: $text-size_m3;
+			line-height: $text-lh_m2;
+			width: 90%;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		.bitmap {
+			width: 80%;
+		}
+	}
+
+	.icon-link {
+		width: 250px;
+		padding: 10px;
+
+		img {
+			margin-right: 10px;
+		}
+	}
+
+	.icon-box {
+		h4 {
+			color: $heading-color-dark;
+			font-size: $text-size_m2;
+			width: 200px;
+		}
+
+		p {
+			color: $text-color-dark;
+			font-size: $text-size2_m3;
+			text-align: left;
+			width: 180px;
+		}
+	}
+}
