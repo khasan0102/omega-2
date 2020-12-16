@@ -967,6 +967,117 @@ p {
   .music-box p {
     font-size: 13px; } }
 
+.people-section {
+  width: 100%;
+  background: linear-gradient(90deg, #5454d4 0%, #5454d4 25%, #0183be 40%, #0183be 100%); }
+
+.people-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff; }
+  .people-box h1 {
+    font-size: 55px;
+    line-height: 65px;
+    width: 500px; }
+  .people-box p {
+    font-size: 19px;
+    line-height: 30px;
+    width: 515px;
+    margin-bottom: 15px;
+    margin-top: 20px; }
+
+@media only screen and (max-width: 1150px) {
+  .people-box {
+    width: 90%; }
+    .people-box h1 {
+      font-size: 40px;
+      line-height: 50px;
+      width: 380px; }
+    .people-box p {
+      font-size: 17px;
+      line-height: 24px;
+      width: 400px; }
+    .people-box img {
+      width: 480px;
+      height: 480px; } }
+
+@media only screen and (max-width: 950px) {
+  .people-box {
+    width: 90%; }
+    .people-box h1 {
+      font-size: 29px;
+      line-height: 38px;
+      width: 300px; }
+    .people-box p {
+      font-size: 15px;
+      line-height: 21px;
+      width: 300px; }
+    .people-box img {
+      width: 400px;
+      height: 400px; } }
+
+@media only screen and (max-width: 750px) {
+  .people-box {
+    width: 95%; }
+    .people-box h1 {
+      font-size: 23px;
+      line-height: 34px;
+      width: 290px; }
+    .people-box p {
+      font-size: 13px;
+      line-height: 19px;
+      width: 290px; }
+    .people-box img {
+      width: 270px;
+      height: 270px; }
+    .people-box .buy-link {
+      padding: 10px 25px;
+      font-size: 15px; } }
+
+@media only screen and (max-width: 600px) {
+  .people-section {
+    background: linear-gradient(180deg, #5454d4 0%, #5454d4 35%, #0183be 55%, #0183be 100%);
+    padding-top: 30px; }
+  .people-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+    .people-box .people-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .people-box h1 {
+      font-size: 29px;
+      line-height: 38px;
+      width: 80%;
+      text-align: center; }
+    .people-box p {
+      font-size: 15px;
+      line-height: 21px;
+      width: 80%;
+      text-align: center; }
+    .people-box img {
+      width: 80%;
+      height: auto; } }
+
+@media only screen and (max-width: 450px) {
+  .people-box h1 {
+    font-size: 23px;
+    line-height: 34px;
+    width: 90%; }
+  .people-box p {
+    font-size: 13px;
+    line-height: 19px;
+    width: 90%; }
+  .people-box img {
+    width: 90%;
+    height: auto; } }
+
+.users {
+  margin-top: 70px; }
+
 .users-box {
   display: flex;
   flex-direction: column;
@@ -1063,9 +1174,12 @@ p {
       line-height: 24px; } }
 
 @media only screen and (max-width: 750px) {
+  .users-box h1 {
+    font-size: 29px; }
   .users-list a {
     width: 280px;
-    height: 200px; }
+    height: 200px;
+    margin-top: 20px; }
     .users-list a .user-paragaraph {
       font-size: 15px;
       line-height: 21px;
@@ -1078,7 +1192,7 @@ p {
     width: 100%; }
   .users-list a {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 70%;
     height: 200px; }
     .users-list a .user-paragaraph {
@@ -1121,19 +1235,21 @@ p {
     color: white;
     font-size: 55px;
     line-height: 65px; }
-  .buy-box .buy-link {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    background-color: #fedc5a;
-    font-size: 19px;
-    padding: 12px 40px;
-    font-weight: 500;
-    border-radius: 5px;
-    transition: color 0.3s ease, box-shadow 0.4s ease; }
-  .buy-box .buy-link:hover {
-    box-shadow: 0 0 5px 4px rgba(254, 220, 90, 0.5);
-    color: #585050; }
+
+.buy-link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: #fedc5a;
+  font-size: 19px;
+  padding: 12px 40px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: color 0.3s ease, box-shadow 0.4s ease; }
+
+.buy-link:hover {
+  box-shadow: 0 0 5px 4px rgba(254, 220, 90, 0.5);
+  color: #585050; }
 
 @media only screen and (max-width: 900px) {
   .buy-box {
@@ -1148,9 +1264,9 @@ p {
     .buy-box h1 {
       font-size: 38px;
       line-height: 38px; }
-    .buy-box .buy-link {
-      font-size: 17px;
-      padding: 10px 30px; } }
+  .buy-link {
+    font-size: 17px;
+    padding: 10px 30px; } }
 
 @media only screen and (max-width: 600px) {
   .buy {
@@ -1176,7 +1292,7 @@ p {
     font-size: 23px;
     line-height: 34px;
     margin-bottom: 10px; }
-  .buy-box .buy-link {
+  .buy-link {
     padding: 7px 10px;
     font-size: 15px; } }
 

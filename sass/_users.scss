@@ -1,5 +1,7 @@
 @import "_variable";
-
+.users {
+	margin-top: 70px;
+}
 .users-box {
 	display: flex;
 	flex-direction: column;
@@ -127,10 +129,16 @@
 }
 
 @media only screen and (max-width: 750px) {
+	.users-box {
+		h1 {
+			font-size: $heading-size_m2;
+		}
+	}
 	.users-list {
 		a {
 			width: 280px;
 			height: 200px;
+			margin-top: 20px;
 
 			.user-paragaraph {
 				font-size: $text-size_m2;
@@ -151,7 +159,7 @@
 	.users-list {
 		a {
 			margin: 0 auto;
-			margin-top: 30px;
+			margin-top: 10px;
 			width: 70%;
 			height: 200px;
 
@@ -161,18 +169,17 @@
 		}
 	}
 
-	.user-name-box{
-		h4{
+	.user-name-box {
+		h4 {
 			font-size: $text-size_m1;
 		}
-		span{
+		span {
 			font-size: $text-size_m3;
 		}
 	}
 }
 
-
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
 	.users-box {
 		h1 {
 			font-size: $heading-size_m2;
@@ -184,7 +191,6 @@
 		}
 	}
 
-
 	.users-list {
 		a {
 			height: auto;
@@ -195,17 +201,17 @@
 		}
 	}
 
-	.user-info-box{
-		img{
+	.user-info-box {
+		img {
 			height: 30px;
 			width: 30px;
 		}
 	}
-	.user-name-box{
-		h4{
+	.user-name-box {
+		h4 {
 			font-size: $text-size_m3;
 		}
-		span{
+		span {
 			font-size: 12px;
 		}
 	}

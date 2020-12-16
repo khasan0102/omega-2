@@ -1,0 +1,150 @@
+@import "_variable";
+
+.people-section {
+	width: 100%;
+	background: linear-gradient(90deg, #5454d4 0%, #5454d4 25%, #0183be 40%, #0183be 100%);
+}
+
+.people-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+
+	h1 {
+		font-size: $heading-size;
+		line-height: $heading-lh;
+		width: 500px;
+	}
+
+	p {
+		font-size: $text-size;
+		line-height: $text-lh;
+		width: 515px;
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.people-box {
+		width: 90%;
+		h1 {
+			font-size: $heading-size_m1;
+			line-height: $heading-lh_m1;
+			width: 380px;
+		}
+
+		p {
+			font-size: $text-size_m1;
+			line-height: $text-lh_m1;
+			width: 400px;
+		}
+		img {
+			width: 480px;
+			height: 480px;
+		}
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.people-box {
+		width: 90%;
+		h1 {
+			font-size: $heading-size_m2;
+			line-height: $heading-lh_m2;
+			width: 300px;
+		}
+
+		p {
+			font-size: $text-size_m2;
+			line-height: $text-lh_m2;
+			width: 300px;
+		}
+		img {
+			width: 400px;
+			height: 400px;
+		}
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.people-box {
+		width: 95%;
+		h1 {
+			font-size: $heading-size_m3;
+			line-height: $heading-lh_m3;
+			width: 290px;
+		}
+
+		p {
+			font-size: $text-size_m3;
+			line-height: $text-lh_m3;
+			width: 290px;
+		}
+		img {
+			width: 270px;
+			height: 270px;
+		}
+
+		.buy-link {
+			padding: 10px 25px;
+			font-size: 15px;
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	.people-section {
+		background: linear-gradient(180deg, #5454d4 0%, #5454d4 35%, #0183be 55%, #0183be 100%);
+		padding-top: 30px;
+	}
+	.people-box {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		.people-info {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		h1 {
+			font-size: $heading-size_m2;
+			line-height: $heading-lh_m2;
+			width: 80%;
+			text-align: center;
+		}
+
+		p {
+			font-size: $text-size_m2;
+			line-height: $text-lh_m2;
+			width: 80%;
+			text-align: center;
+		}
+		img {
+			width: 80%;
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.people-box {
+		h1 {
+			font-size: $heading-size_m3;
+         line-height: $heading-lh_m3;
+         width: 90%;
+		}
+
+		p {
+			font-size: $text-size_m3;
+         line-height: $text-lh_m3;
+         width: 90%;
+		}
+
+		img {
+			width: 90%;
+			height: auto;
+		}
+	}
+}
